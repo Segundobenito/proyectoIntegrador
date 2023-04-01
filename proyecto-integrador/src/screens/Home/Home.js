@@ -5,7 +5,7 @@ import './styles.css';
     render() {
         return (
             <div>
-                <h1>Bien venidos !</h1>
+                
             </div>
         )
     }
