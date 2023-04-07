@@ -11,8 +11,8 @@ function Home() {
 
         <>
         <Buscador />
-         <h1>Seccion 1 </h1>
-           <ContenedorHome />
+        <h1>Seccion 1 </h1>
+        <ContenedorHome />
       
             
         </>
