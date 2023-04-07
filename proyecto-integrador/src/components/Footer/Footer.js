@@ -11,7 +11,7 @@ import './styles.css';
 
             <ul className = "names">
                 <li><a href>Segundo Benito</a></li>
-                <li><a href>Zackarias O'Farrell</a></li>
+                <li><a href>Zacarias O'Farrell</a></li>
                 <li><a href>Tomas Arizu</a></li>
             </ul>
 

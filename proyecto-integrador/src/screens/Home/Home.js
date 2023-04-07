@@ -1,27 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ContenedorHome from '../../components/ContenedorHome/ContenedorHome';
+import Buscador from '../../components/Buscador/Buscador';
 import './styles.css';
 
- class Home extends Component {
    
-    constructor(props) {
-        super(props)
-        this.state = {
-          info: ''
-        }
-      }
+function Home() {
+  
 
-    render() {
-        return (
-            <>
-              <main className = "myMain">
-               <ContenedorHome />
+    return (
 
-              </main>
-                
-            </>
-        )
-    }
+        <>
+        <Buscador />
+         <h1>Seccion 1 </h1>
+           <ContenedorHome />
+      
+            
+        </>
+    )
+
 }
+
 
 export default Home;

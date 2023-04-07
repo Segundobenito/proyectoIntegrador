@@ -4,22 +4,26 @@ import Header from './components/Header/Header';
 import Home from './screens/Home/Home';
 import Favorites from './screens/Favorites/Favorites';
 import Footer from './components/Footer/Footer';
+import Buscador from './components/Buscador/Buscador';
 import NotFound from './components/NotFound/NotFound';
-import CancionDetalle from './screens/CancionDetalle/CancionDetalle';
+import peliculaDetalle from './screens/peliculaDetalle/peliculaDetalle';
 
 function App() {
   return (
 
     <>
       <Header />
-
+          <main>
           <Switch>
+            
             <Route path = "/" exact = {true} component = {Home} />
             <Route path = "/favorites" component = {Favorites} />
-            <Route path = '/cancion-detalle/:id?' component = {CancionDetalle} />
+            <Route path = '/peliculas/detalle/id/:id' component = {peliculaDetalle} />
+            <Route path = "/resultados/:title" component = {Buscador} />
             <Route component = {NotFound} />
 
           </Switch>
+          </main>
         
       <Footer />
    
