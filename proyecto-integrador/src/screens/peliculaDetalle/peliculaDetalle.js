@@ -13,7 +13,7 @@ import React, { Component } from 'react'
 
      componentDidMount() {
         
-        fetch(`https://api.themoviedb.org/3/movie/${this.state.id}?api_key= ` )
+        fetch(`https://api.themoviedb.org/3/movie/${this.state.id}?api_key=8fe477c9339c0a2e32b6b0fce8059603 ` )
         .then(res => res.json())
         .then(data => this.setState({
             pelicula: data,

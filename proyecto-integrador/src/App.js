@@ -10,8 +10,8 @@ import peliculaDetalle from './screens/peliculaDetalle/peliculaDetalle';
 
 function App() {
   return (
-
-    <>
+  
+  <>
       <Header />
           <main>
           <Switch>
