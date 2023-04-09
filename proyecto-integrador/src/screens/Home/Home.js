@@ -14,7 +14,7 @@ function Home() {
          <h1>Seccion 1 </h1>
            <ContenedorHome />
 
-           <ContenedorHome />
+         
       
             
         </>
