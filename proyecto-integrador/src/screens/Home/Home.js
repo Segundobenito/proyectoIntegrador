@@ -12,15 +12,9 @@ function Home() {
 
         <>
         <Buscador />
-<<<<<<< HEAD
-           <ContenedorHome />
-
-           {/* <ContenedorHomeSerie /> */}
-=======
             <ContenedorHome />
             <ContenedorHomeSeries/>
             
->>>>>>> ee35c9c98135ad84b7bcae1e9e17a2c9646d85a4
       
             
         </>
