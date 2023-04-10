@@ -42,7 +42,7 @@ cambiarTexto() {
                         <a className = "descripcion" onClick = {() => this.cambiarTexto() }>{this.state.descripcion}</a>
                         
                         <Link className = "detalleHome" to = {`/peliculas/detalle/id/${this.props.datosPelicula.id}`}><button>Ir a detalle</button></Link> 
-
+                        
                         <button >Agregar/Quitar de favoritos</button>
 
                         
