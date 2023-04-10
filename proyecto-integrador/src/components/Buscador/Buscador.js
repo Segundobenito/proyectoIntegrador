@@ -1,23 +1,23 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Buscador extends Component{
-    constructor(props){
+class Buscador extends Component {
+    constructor(props) {
         super(props);
-        this.state={
+        this.state = {
             input: "",
         }
     }
-    prevenirDefault(e){ 
+    prevenirDefault(e) {
         e.preventDefault();
     };
-    guardarCambios(e){ 
+    guardarCambios(e) {
         this.setState({
             input: e.target.value
-        }); 
+        });
     };
-    
-    render () {
+
+    render() {
         return (
             <React.Fragment>
                 <form onSubmit={(e) => this.prevenirDefault(e)}>
@@ -25,12 +25,12 @@ class Buscador extends Component{
                     {
                         this.state.input ?
                             <Link to={`/resultados/${this.state.input}`}>
-                                <input type='submit' value='submit' /> 
-                            </Link> 
+                                <input type='submit' value='submit' />
+                            </Link>
                             :
-                            <input type='submit' value='submit' /> 
+                            <input type='submit' value='submit' />
                     }
-                </form> 
+                </form>
             </React.Fragment>
         )
 

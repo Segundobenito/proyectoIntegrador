@@ -5,17 +5,13 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body {
-    background: #fcfcfc;
-}
-
 footer {
     background: black;
-    height:auto;
-    width:100vw;
+    height: auto;
+    width: 100vw;
     font-family: "Open Sans";
     padding-top: 40px;
-    color:#fff;
+    color: #fff;
 }
 
 .footer-content {
@@ -26,7 +22,7 @@ footer {
     text-align: center;
 }
 
-.footer-content h3{
+.footer-content h3 {
     font-size: size 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
@@ -41,7 +37,7 @@ footer {
     font-size: 14px;
 }
 
-.names{
+.names {
     list-style: none;
     display: flex;
     align-items: center;
@@ -52,20 +48,9 @@ footer {
 .names li {
     margin: 0 10px;
 }
-
-.names a{
+.names a {
     text-decoration: none;
     color: #fff;
-
-}
-
-.names a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
-}
-
-.names a:hover i {
-    color:aqua;
 
 }
 
@@ -76,14 +61,8 @@ footer {
     text-align: center;
 }
 
-.footer-bottom p{
+.footer-bottom p {
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
-}
-
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: 4;
-    font-weight: 200;
 }
