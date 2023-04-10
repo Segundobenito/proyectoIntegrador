@@ -29,7 +29,7 @@ import Buscador from '../../components/Buscador/Buscador'
         console.log(this.props);
         return (
             <>
-                <h1>Detalle</h1>
+                
                 
                 {
                     

@@ -5,8 +5,7 @@ import './styles.css';
  function Header() {
     return (
         <nav>
-
-               <label className = "logo">MyflixeR</label>
+               <label className = "logo"><Link exact = {true} to = "/"> MyflixeR </Link></label>
                 <ul >
 
                     <li><Link exact = {true} to = "/"> Home </Link> </li>
