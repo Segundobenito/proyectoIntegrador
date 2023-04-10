@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Buscador from '../Buscador/Buscador';
 import './styles.css';
 
  function Header() {
@@ -7,7 +8,7 @@ import './styles.css';
         <nav>
                <label className = "logo"><Link exact = {true} to = "/"> MyflixeR </Link></label>
                 <ul >
-
+                    <li><Buscador/></li>
                     <li><Link exact = {true} to = "/"> Home </Link> </li>
                     <li><Link exact = {true} to = "/peliculas/top"> Ver las mejores peliculas </Link> </li>
                     <li><Link exact = {true} to = "/series/top"> Ver las mejores series </Link> </li>

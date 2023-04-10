@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Buscador from '../../components/Buscador/Buscador';
+import './styles.css'
 
  class CancionDetalle extends Component {
      constructor(props){
@@ -36,18 +37,24 @@ import Buscador from '../../components/Buscador/Buscador';
                     this.state.pelicula.title === 0 ?
                     <p>No tenemos lo que buscas</p> 
                     :
-                    <div>
-                        <Buscador/>
+                    <section className='sectionPadre'>
+                    <div className='hijo1'>
                         <h2>{this.state.pelicula.title}</h2>
                         <img src={`https://image.tmdb.org/t/p/w342/${this.state.pelicula.poster_path}`}/>
-                        <p>Rating: {this.state.pelicula.popularity}</p>
-                        <p>Fecha de Estreno: {this.state.pelicula.release_date}</p>
-                        <p>Duracion: {this.state.pelicula.runtime}</p>
-                        <p>Sinopsis: {this.state.pelicula.overview}</p>
-                        <ul>Generos:{this.state.generos.map((genero, idx) => <li key = {genero.name + idx}>{genero.name}</li>)}</ul>
-                       
-
                     </div>
+                    <div className='hijo2'>
+                        <ul>
+                       <li> <p>Rating: {this.state.pelicula.popularity}</p></li>
+                       <li><p>Fecha de Estreno: {this.state.pelicula.release_date}</p></li>
+                       <li><p>Duracion: {this.state.pelicula.runtime}</p></li>
+                        
+                        <ul>Generos:{this.state.generos.map((genero, idx) => <li key = {genero.name + idx}>{genero.name}</li>)}</ul>
+                        </ul>
+                    </div>
+                    <div className='sinopsis'>
+                    <p>Sinopsis: {this.state.pelicula.overview}</p>
+                    </div>
+                    </section>
 
                 }
                

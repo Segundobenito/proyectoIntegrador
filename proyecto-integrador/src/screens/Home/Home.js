@@ -11,7 +11,6 @@ function Home() {
     return (
 
         <>
-        <Buscador />
         <h1> PELICULAS</h1>
         <ContenedorHome />
         <h1 className='seriesH1'> SERIES</h1>

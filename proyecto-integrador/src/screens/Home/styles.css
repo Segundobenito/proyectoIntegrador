@@ -29,3 +29,7 @@ img{
 .seriesH1{
     padding-top: 35px;
 }
+button{
+    background-image: url(../../../public/img/backgroundimgz.jpeg);
+    color: white;
+}
