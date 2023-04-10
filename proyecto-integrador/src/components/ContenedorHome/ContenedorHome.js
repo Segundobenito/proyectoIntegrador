@@ -41,8 +41,11 @@ let urlTopRatedMovies = "https://api.themoviedb.org/3/movie/top_rated?api_key=8f
                     this.state.topPeliculas.map((unaPelicula, idx) => <HomeCards key={unaPelicula.name + idx} datosPelicula={unaPelicula} />)
                     }
 
-                <Link to='/peliculas/top' > <button>Ver las mejores peliculas</button></Link>
+                
                 </section>
+                <div className='padreBoton'>
+                <Link to='/peliculas/top' > <button>Ver las mejores peliculas</button></Link>
+                </div>
                 
             </React.Fragment>
 

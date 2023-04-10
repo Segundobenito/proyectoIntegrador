@@ -7,7 +7,6 @@ section{
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: center;
-    padding: 50px;
 }
 h3{
     color: lightgoldenrodyellow;
@@ -26,4 +25,7 @@ h1{
 }
 img{
     align-self: center;
+}
+.seriesH1{
+    padding-top: 35px;
 }

@@ -14,7 +14,7 @@ function Home() {
         <Buscador />
         <h1> PELICULAS</h1>
         <ContenedorHome />
-        <h1> SERIES</h1>
+        <h1 className='seriesH1'> SERIES</h1>
         <ContenedorHomeSeries/>
             
       

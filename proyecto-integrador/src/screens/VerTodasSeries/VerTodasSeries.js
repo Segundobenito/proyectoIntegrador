@@ -56,8 +56,9 @@ class VerTodasSeries extends Component {
       <React.Fragment>
 
 
-
+      
         <div>
+        
           <Form filtrado={(texto) => this.filtrado(texto)}/>
         </div>
 

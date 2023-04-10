@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Buscador from '../../components/Buscador/Buscador';
 
  class CancionDetalle extends Component {
      constructor(props){
@@ -36,6 +37,7 @@ import React, { Component } from 'react'
                     <p>No tenemos lo que buscas</p> 
                     :
                     <div>
+                        <Buscador/>
                         <h2>{this.state.pelicula.title}</h2>
                         <img src={`https://image.tmdb.org/t/p/w342/${this.state.pelicula.poster_path}`}/>
                         <p>Rating: {this.state.pelicula.popularity}</p>

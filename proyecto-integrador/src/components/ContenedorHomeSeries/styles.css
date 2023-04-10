@@ -82,7 +82,14 @@ img{
 .contenedorPadre{
     display: flexbox;
 }
-
+.padreBoton{
+    display: flex;
+    justify-content: center;
+    /* padding: 50px; */
+}
+.boton{
+    align-items: center;
+}
 
 
 
