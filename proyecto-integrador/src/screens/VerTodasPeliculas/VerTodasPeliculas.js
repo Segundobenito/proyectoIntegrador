@@ -65,7 +65,7 @@ class VerTodasPeliculas extends Component {
         <section>
           {
             this.state.array2.length === 0 ?
-              <p>Cargando</p>
+              <img src='../../public/img/gifCargando.gif'/>
               :
               this.state.array2.map((unaPelicula, idx) => <HomeCards key={unaPelicula.name + idx} datosPelicula={unaPelicula} />)
 
