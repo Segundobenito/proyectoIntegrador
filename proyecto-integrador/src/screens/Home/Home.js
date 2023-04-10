@@ -12,8 +12,10 @@ function Home() {
 
         <>
         <Buscador />
-            <ContenedorHome />
-            <ContenedorHomeSeries/>
+        <h1> PELICULAS</h1>
+        <ContenedorHome />
+        <h1> SERIES</h1>
+        <ContenedorHomeSeries/>
             
       
             

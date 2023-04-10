@@ -37,7 +37,7 @@ let urlTopRatedSeries = "https://api.themoviedb.org/3/tv/top_rated?api_key=8fe47
     ) {
         return (
             <React.Fragment>
-                <section>
+                <section className='contenedorPadre'>
                     {
                     this.state.topSeries.map((unaSerie, idx) => <HomeCardsSeries key={unaSerie.name + idx} datosSerie={unaSerie} />)
                     }

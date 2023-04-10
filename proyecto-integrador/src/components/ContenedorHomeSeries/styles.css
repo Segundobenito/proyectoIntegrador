@@ -79,7 +79,9 @@ img{
 .divS{
     padding: 10px;
 }
-
+.contenedorPadre{
+    display: flexbox;
+}
 
 
 
