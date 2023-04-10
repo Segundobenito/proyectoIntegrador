@@ -16,6 +16,7 @@ class Buscador extends Component{
             input: e.target.value
         }); 
     };
+    
     render () {
         return (
             <React.Fragment>
