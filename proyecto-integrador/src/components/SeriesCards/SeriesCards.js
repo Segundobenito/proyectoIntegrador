@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import './styles.css';
 
-class HomeCards extends Component {
+class SeriesCards extends Component {
 constructor(props) {
     super(props)
     this.state = {
@@ -57,6 +57,6 @@ cambiarTexto() {
     }
 }
 
-export default HomeCards;
+export default SeriesCards;
 
 
