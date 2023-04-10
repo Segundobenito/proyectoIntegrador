@@ -37,11 +37,12 @@ import React, { Component } from 'react'
                     :
                     <div>
                         <h2>{this.state.pelicula.title}</h2>
+                        <img src={`https://image.tmdb.org/t/p/w342/${this.state.pelicula.poster_path}`}/>
                         <p>Rating: {this.state.pelicula.popularity}</p>
                         <p>Fecha de Estreno: {this.state.pelicula.release_date}</p>
                         <p>Duracion: {this.state.pelicula.runtime}</p>
                         <p>Sinopsis: {this.state.pelicula.overview}</p>
-                        <ul>{this.state.generos.map((genero, idx) => <li key = {genero.name + idx}>{genero.name}</li>)}</ul>
+                        <ul>Generos:{this.state.generos.map((genero, idx) => <li key = {genero.name + idx}>{genero.name}</li>)}</ul>
                        
 
                     </div>

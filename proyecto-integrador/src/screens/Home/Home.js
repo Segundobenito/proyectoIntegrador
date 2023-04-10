@@ -1,7 +1,7 @@
 import React from 'react';
 import ContenedorHome from '../../components/ContenedorHome/ContenedorHome';
 import Buscador from '../../components/Buscador/Buscador';
-import './styles.css';
+import './styles.css'; 
 
    
 function Home() {
@@ -13,7 +13,6 @@ function Home() {
         <Buscador />
            <ContenedorHome />
 
-           <ContenedorHome />
       
             
         </>
