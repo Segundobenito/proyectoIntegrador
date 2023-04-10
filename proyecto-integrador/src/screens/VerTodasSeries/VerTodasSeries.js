@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import HomeCards from '../../components/HomeCards/HomeCards'
+import HomeCardsSeries from '../../components/HomeCardsSeries/HomeCardsSeries'
 import Form from '../../components/Form/Form'
-let topRated = `https://api.themoviedb.org/3/movie/top_rated?api_key=8fe477c9339c0a2e32b6b0fce8059603`
+let topRated = `https://api.themoviedb.org/3/tv/top_rated?api_key=8fe477c9339c0a2e32b6b0fce8059603`
 
 
 class VerTodasSeries extends Component {
@@ -28,7 +28,7 @@ class VerTodasSeries extends Component {
   }
 
   load() {
-    let paginaSiguiente = `https://api.themoviedb.org/3/movie/top_rated?api_key=8fe477c9339c0a2e32b6b0fce8059603&page=${this.state.nextPage + 1}`
+    let paginaSiguiente = `https://api.themoviedb.org/3/tv/top_rated?api_key=8fe477c9339c0a2e32b6b0fce8059603&page=${this.state.nextPage + 1}`
     fetch(paginaSiguiente)
     .then(res => res.json())
     .then(
@@ -42,9 +42,9 @@ class VerTodasSeries extends Component {
 
   filtrado(texto) {
   
-  let pelisfiltro = this.state.array1.filter( pelicula => pelicula.title.toLowerCase().includes(texto.toLowerCase()))
+  let serieFiltro = this.state.array1.filter( serie => serie.name.toLowerCase().includes(texto.toLowerCase()))
   this.setState({
-    array2 : pelisfiltro
+    array2 : serieFiltro
   })
 
 }
@@ -67,14 +67,14 @@ class VerTodasSeries extends Component {
             this.state.array2.length === 0 ?
               <img src='../../public/img/gifCargando.gif'/>
               :
-              this.state.array2.map((unaPelicula, idx) => <HomeCards key={unaPelicula.name + idx} datosPelicula={unaPelicula} />)
+              this.state.array2.map((unaSerie, idx) => <HomeCardsSeries key={unaSerie.name + idx} datosSerie={unaSerie} />)
 
           }
         
 
         </section>
         <button className='load' type='button' onClick={() => this.load()}>
-          Cargar peliculas
+          Cargar Series
           </button>
       </React.Fragment>
     )
