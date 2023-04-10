@@ -4,7 +4,7 @@ import Form from '../../components/Form/Form'
 let topRated = `https://api.themoviedb.org/3/movie/top_rated?api_key=8fe477c9339c0a2e32b6b0fce8059603`
 
 
-class VerTodasPeliculas extends Component {
+class VerTodasSeries extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -82,4 +82,4 @@ class VerTodasPeliculas extends Component {
 }
 
 
-export default VerTodasPeliculas
+export default VerTodasSeries
