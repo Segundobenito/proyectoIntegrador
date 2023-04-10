@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import HomeCards from '../../components/HomeCards/HomeCards';
+import HomeCardsSeries from '../../components/HomeCardsSeries/HomeCardsSeries';
 import { Link } from 'react-router-dom';
-let urlTopRatedSeries = "https://api.themoviedb.org/3/movie/top_rated?api_key=8fe477c9339c0a2e32b6b0fce8059603";
+import "./styles.css"
+let urlTopRatedSeries = "https://api.themoviedb.org/3/tv/top_rated?api_key=8fe477c9339c0a2e32b6b0fce8059603";
 
 
  class ContenedorHomeSeries extends Component {
@@ -38,10 +39,10 @@ let urlTopRatedSeries = "https://api.themoviedb.org/3/movie/top_rated?api_key=8f
             <React.Fragment>
                 <section>
                     {
-                    this.state.topSeries.map((unaSerie, idx) => <HomeCards key={unaSerie.name + idx} datosSerie={unaSerie} />)
+                    this.state.topSeries.map((unaSerie, idx) => <HomeCardsSeries key={unaSerie.name + idx} datosSerie={unaSerie} />)
                     }
 
-<Link to='/peliculas/top' > <button>Ver las mejores Series</button></Link>
+<Link to='/series/top' > <button>Ver las mejores Series</button></Link>
                 </section>
                 
             </React.Fragment>

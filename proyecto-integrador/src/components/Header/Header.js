@@ -11,6 +11,7 @@ import './styles.css';
 
                     <li><Link exact = {true} to = "/"> Home </Link> </li>
                     <li><Link exact = {true} to = "/peliculas/top"> Ver las mejores peliculas </Link> </li>
+                    <li><Link exact = {true} to = "/series/top"> Ver las mejores series </Link> </li>
                     <li><Link to = "/favorites"> Favorites </Link> </li>
                 </ul>
     
