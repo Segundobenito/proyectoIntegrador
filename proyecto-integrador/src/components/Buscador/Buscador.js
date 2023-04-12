@@ -11,10 +11,28 @@ class Buscador extends Component {
     prevenirDefault(e) {
         e.preventDefault();
     };
+
+    metodoQueFiltra(texto, arrayFuente){
+
+        let filtrado = arrayFuente.filter((elm) => elm.name.toLowerCase().includes(texto.toLowerCase()))
+        return filtrado
+      
+    }
+
+
     guardarCambios(e) {
         this.setState({
             input: e.target.value
-        });
+        }, () => {
+
+            let filtro = this.metodoQueFiltra(this.state.input, this.props.fuente)
+            this.props.actualizador(filtro)
+        }
+
+        
+        
+        
+        );
     };
 
     render() {

@@ -53,4 +53,4 @@ let urlTopRatedMovies = "https://api.themoviedb.org/3/movie/top_rated?api_key=8f
     }
 }
 
-export default ContenedorHome;
+export default ContenedorHome;
