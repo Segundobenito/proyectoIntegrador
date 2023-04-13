@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ContenedorHome from '../../components/ContenedorHome/ContenedorHome';
 import "./styles.css";
+import ContenedorPeliculas from '../../components/ContenedorPeliculas/ContenedorPeliculas';
 
 
 class Favorites extends Component {
@@ -26,7 +26,7 @@ class Favorites extends Component {
                 })
             )
             .then(data => this.setState({
-                favoritos: data
+                favoritos: data.results
             }))
             .catch(err => console.log(err))
         }
@@ -35,7 +35,7 @@ class Favorites extends Component {
 
     render() {
         return (
-            <ContenedorHome/>
+         <ContenedorPeliculas topPeliculas={this.state.favoritos}/>
         )
     }
     }

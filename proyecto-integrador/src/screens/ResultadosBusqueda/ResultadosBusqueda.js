@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Buscador from '../../components/Buscador/Buscador'
 import ContenedorHome from '../../components/ContenedorHome/ContenedorHome'
+import ContenedorPeliculas from '../../components/ContenedorPeliculas/ContenedorPeliculas'
 class ResultadosBusqueda extends Component{
     constructor(props){
         super(props)
@@ -38,7 +39,7 @@ class ResultadosBusqueda extends Component{
                 fuente = {this.state.backup}
                 
                 />
-                <ContenedorHome topPeliculas={this.state.topPeliculas}/>
+                <ContenedorPeliculas topPeliculas={this.state.topPeliculas}/>
             </div>
         )
     }
