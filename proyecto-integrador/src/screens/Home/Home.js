@@ -8,6 +8,7 @@ import './styles.css';
 function Home() {
     return (
         <>
+            <Buscador />
             <h1> PELICULAS</h1>
             <ContenedorHome />
             <h1 className='seriesH1'> SERIES</h1>
@@ -17,4 +18,4 @@ function Home() {
 }
 
 
-export default Home;
+export default Home;

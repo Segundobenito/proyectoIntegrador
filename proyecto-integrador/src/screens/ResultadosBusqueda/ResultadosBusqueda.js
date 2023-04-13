@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Buscador from '../../components/Buscador/Buscador'
 import ContenedorHome from '../../components/ContenedorHome/ContenedorHome'
-import ContenedorPeliculas from '../../components/ContenedorPeliculas/ContenedorPeliculas'
 class ResultadosBusqueda extends Component{
     constructor(props){
         super(props)
@@ -19,7 +18,7 @@ class ResultadosBusqueda extends Component{
     }
 
     componentDidMount(){
-        fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=8fe477c9339c0a2e32b6b0fce8059603'
+        fetch('https://api.themoviedb.org/3/movie/search?api_key=8fe477c9339c0a2e32b6b0fce8059603'
         .then( resp => resp.json())
         .then( data => this.setState({
             topPeliculas: data.results,
@@ -39,7 +38,7 @@ class ResultadosBusqueda extends Component{
                 fuente = {this.state.backup}
                 
                 />
-                <ContenedorPeliculas topPeliculas={this.state.topPeliculas}/>
+                <ContenedorHome topPeliculas={this.state.topPeliculas}/>
             </div>
         )
     }

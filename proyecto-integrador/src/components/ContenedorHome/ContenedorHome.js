@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import HomeCards from '../../components/HomeCards/HomeCards';
-import "./styles.css"
 import { Link } from 'react-router-dom';
 let urlTopRatedMovies = "https://api.themoviedb.org/3/movie/top_rated?api_key=8fe477c9339c0a2e32b6b0fce8059603";
 
