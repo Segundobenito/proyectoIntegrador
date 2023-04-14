@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
+import './styles.css'
 import HomeCardsSeries from '../../components/HomeCardsSeries/HomeCardsSeries'
 import Form from '../../components/Form/Form'
 let topRated = `https://api.themoviedb.org/3/tv/top_rated?api_key=8fe477c9339c0a2e32b6b0fce8059603`
+
 
 
 class VerTodasSeries extends Component {
@@ -52,7 +54,7 @@ class VerTodasSeries extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>
+        <div className='form'>
           <Form filtrado={(texto) => this.filtrado(texto)} />
         </div>
         <section>

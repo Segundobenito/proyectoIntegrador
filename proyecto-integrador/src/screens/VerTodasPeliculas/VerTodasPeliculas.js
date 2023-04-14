@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './styles.css'
 import HomeCards from '../../components/HomeCards/HomeCards'
 import Form from '../../components/Form/Form'
 let topRated = `https://api.themoviedb.org/3/movie/top_rated?api_key=8fe477c9339c0a2e32b6b0fce8059603`
@@ -53,7 +54,7 @@ class VerTodasPeliculas extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>
+        <div className='form' >
           <Form filtrado={(texto) => this.filtrado(texto)} />
         </div>
         <section>
